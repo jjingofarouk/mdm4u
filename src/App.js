@@ -1,17 +1,26 @@
 import React, { useState } from 'react';
 import RoadSafetyCharts from './RoadSafetyCharts';
 import './App.css';
+import { 
+  BarChart2, 
+  FileText, 
+  Microscope, 
+  TrendingUp, 
+  PieChart, 
+  Target,
+  Map
+} from 'lucide-react';
 
 function App() {
   const [activeSection, setActiveSection] = useState('overview');
 
   const navigationItems = [
-    { id: 'overview', label: 'Overview', icon: '📊' },
-    { id: 'introduction', label: 'Introduction', icon: '📋' },
-    { id: 'methodology', label: 'Methodology', icon: '🔬' },
-    { id: 'analysis', label: 'Statistical Analysis', icon: '📈' },
-    { id: 'charts', label: 'Interactive Charts', icon: '📉' },
-    { id: 'conclusions', label: 'Conclusions', icon: '🎯' }
+    { id: 'overview', label: 'Overview', icon: <BarChart2 size={20} /> },
+    { id: 'introduction', label: 'Introduction', icon: <FileText size={20} /> },
+    { id: 'methodology', label: 'Methodology', icon: <Microscope size={20} /> },
+    { id: 'analysis', label: 'Statistical Analysis', icon: <TrendingUp size={20} /> },
+    { id: 'charts', label: 'Interactive Charts', icon: <PieChart size={20} /> },
+    { id: 'conclusions', label: 'Conclusions', icon: <Target size={20} /> }
   ];
 
   const renderContent = () => {
@@ -407,7 +416,7 @@ function App() {
     <div className="App">
       <header className="app-header">
         <div className="header-content">
-          <h1>🛣️ Ontario Highway Safety Analysis</h1>
+          <h1><Map size={24} /> Ontario Highway Safety Analysis</h1>
           <p>Comprehensive Statistical Analysis of Collision Trends (2000-2019)</p>
         </div>
       </header>
