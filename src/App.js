@@ -51,7 +51,7 @@ function App() {
                   <li><strong>Road Type Differences:</strong> Secondary Highways showed highest collision rates (1.095 mean), 
                       followed by King's Highways (0.68 mean) and Freeways (0.57 mean)</li>
                   <li><strong>Statistical Significance:</strong> ANOVA results confirmed significant differences between road types 
-                      (F(2,57) = 209, p < 0.00001)</li>
+                      (F(2,57) = 209, p less than 0.00001)</li>
                   <li><strong>Correlation Analysis:</strong> Weak correlations found between collision counts and rates, 
                       supporting the importance of MVKM normalization</li>
                 </ul>
@@ -91,7 +91,7 @@ function App() {
               <h3>Hypothesis</h3>
               <p>
                 I hypothesize that collision rates on Ontario Freeways have significantly decreased from 2000 to 2019 
-                due to improved infrastructure and safety measures. I also predict a weak correlation (Pearson's r < 0.3) 
+                due to improved infrastructure and safety measures. I also predict a weak correlation (Pearson's r less than 0.3) 
                 between collision counts and rates across Freeways, King's Highways, and Secondary Highways, as rates 
                 are normalized by MVKM that may mask direct relationships with raw collision counts.
               </p>
@@ -251,7 +251,7 @@ function App() {
                   <li>Slope (β₁): -0.0009</li>
                   <li>R²: 0.013</li>
                   <li>F-statistic: 0.235</li>
-                  <li>p-value: > 0.05 (not significant)</li>
+                  <li>p-value: greater than 0.05 (not significant)</li>
                 </ul>
                 <p><em>Result: No significant linear trend detected</em></p>
               </div>
@@ -283,7 +283,7 @@ function App() {
                 <p><strong>One-way ANOVA Results:</strong></p>
                 <ul>
                   <li>F(2, 57) = 209</li>
-                  <li>p < 0.00001 (highly significant)</li>
+                  <li>p less than 0.00001 (highly significant)</li>
                   <li>All pairwise comparisons significant</li>
                 </ul>
                 <p><em>Conclusion: Significant differences in collision rates between all road types</em></p>
@@ -324,7 +324,7 @@ function App() {
                 <h4>❌ Primary Hypothesis: REJECTED</h4>
                 <p>
                   <strong>Hypothesis:</strong> Freeway collision rates significantly decreased from 2000-2019<br/>
-                  <strong>Result:</strong> No statistically significant trend found (p > 0.05, R² = 0.013)<br/>
+                  <strong>Result:</strong> No statistically significant trend found (p greater than 0.05, R² = 0.013)<br/>
                   <strong>Finding:</strong> Rates remained stable between 0.5-0.6 per MVKM
                 </p>
               </div>
@@ -344,8 +344,8 @@ function App() {
               <div className="insights-grid">
                 <div className="insight-card">
                   <h4>🛣️ Road Type Safety Hierarchy</h4>
-                  <p>Secondary Highways (1.095) > King's Highways (0.68) > Freeways (0.57)</p>
-                  <p><em>ANOVA: F(2,57) = 209, p < 0.00001</em></p>
+                  <p>Secondary Highways (1.095) greater than King's Highways (0.68) greater than Freeways (0.57)</p>
+                  <p><em>ANOVA: F(2,57) = 209, p less than 0.00001</em></p>
                 </div>
                 
                 <div className="insight-card">
